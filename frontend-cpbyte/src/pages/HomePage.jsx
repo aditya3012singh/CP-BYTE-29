@@ -1,4 +1,3 @@
-import SectionTitle from '../components/common/SectionTitle'
 import { SITE_CONFIG } from '../constants/site'
 import { useCounter } from '../hooks/useCounter'
 
@@ -7,7 +6,10 @@ function HomePage() {
 
   return (
     <section className="mx-auto flex min-h-[calc(100vh-130px)] max-w-4xl flex-col items-center justify-center gap-8 px-6 py-12 text-center">
-      <SectionTitle title={SITE_CONFIG.name} subtitle="Project Structure Ready" />
+      <div className="mb-8">
+        <h1 className="text-5xl font-extrabold tracking-tight text-white uppercase">{SITE_CONFIG.name}</h1>
+        <p className="mt-3 text-xl text-cyan-400 font-medium tracking-wide">Project Structure Ready</p>
+      </div>
       <p className="max-w-2xl text-base leading-7 text-slate-300 sm:text-lg">
         Your frontend now has dedicated folders for components, pages, hooks,
         services, utilities, and constants. Start adding feature-specific code
