@@ -49,7 +49,7 @@ const HeroSection = () => {
   return (
     <div
       ref={heroRef}
-      className="relative flex flex-col items-center justify-center bg-brand-dark text-white selection:bg-cyan-500/30 font-sans pt-24 pb-16 border-b border-gray-900 overflow-hidden"
+      className="relative flex flex-col items-center justify-center min-h-screen bg-brand-dark text-white selection:bg-cyan-500/30 font-sans pt-32 pb-24 border-b border-gray-900 overflow-hidden"
     >
       {/* Shared cosmic background */}
       <StarField />
@@ -60,7 +60,7 @@ const HeroSection = () => {
         {/* Label */}
         <div
           ref={labelRef}
-          className="mb-6 text-brand-accent text-[9px] sm:text-[10px] font-semibold tracking-[0.4em] uppercase"
+          className="mb-8 text-brand-accent text-[10px] sm:text-xs font-semibold tracking-[0.4em] uppercase"
         >
           Established 2023
         </div>
@@ -68,7 +68,7 @@ const HeroSection = () => {
         {/* Heading */}
         <h1
           ref={headingRef}
-          className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-[1.05] mb-6 uppercase text-white"
+          className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter leading-[1.05] mb-8 uppercase text-white"
         >
           <span className="block mb-2 md:mb-1">
             CPBYTE<span className="text-brand-accent">:</span>
@@ -81,18 +81,18 @@ const HeroSection = () => {
         {/* Description */}
         <p
           ref={descRef}
-          className="text-gray-300/80 text-xs md:text-sm max-w-xl leading-relaxed mb-10 font-light"
+          className="text-gray-300/80 text-sm md:text-base lg:text-lg max-w-2xl leading-relaxed mb-12 font-light"
         >
           Engineering the next-generation of digital monoliths. We are a collective of developers, designers, and tech-enthusiasts pushing the boundaries of the digital frontier.
         </p>
 
         {/* CTA Buttons */}
-        <div ref={buttonsRef} className="flex flex-row justify-center items-center gap-3 sm:gap-6 w-full mb-16 z-10">
-          <Button variant="primary" className="px-4 sm:px-8 py-3 text-[10px] sm:text-xs">
+        <div ref={buttonsRef} className="flex flex-row justify-center items-center gap-4 sm:gap-6 w-full mb-20 z-10">
+          <Button variant="primary" className="px-6 sm:px-10 py-3.5 text-xs sm:text-sm">
             EXPLORE PORTAL
           </Button>
 
-          <Button variant="outline" className="px-4 sm:px-8 py-3 text-[10px] sm:text-xs">
+          <Button variant="outline" className="px-6 sm:px-10 py-3.5 text-xs sm:text-sm">
             VIEW MANIFEST
           </Button>
         </div>
