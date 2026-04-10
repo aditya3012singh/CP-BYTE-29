@@ -1,10 +1,10 @@
 import MainLayout from './layouts/MainLayout'
-import HomePage from './pages/HomePage'
+import EventsPage from './pages/EventsPage'
 
 function App() {
   return (
     <MainLayout>
-      <HomePage />
+      <EventsPage />
     </MainLayout>
   )
 }
