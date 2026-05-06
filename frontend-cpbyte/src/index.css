@@ -1,35 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/* ===== CPBYTE Design Tokens ===== */
-:root {
-  /* --- Brand Colors --- */
-  --color-bg-primary: #070B14;
-  --color-bg-secondary: #060a12;
-  --color-bg-card: #0d1420;
-  --color-accent: #22d3ee;         /* cyan-400 */
-  --color-accent-dim: rgba(6, 182, 212, 0.3);
-  --color-accent-glow: rgba(6, 182, 212, 0.5);
-  --color-text-primary: #ffffff;
-  --color-text-secondary: rgba(203, 213, 225, 0.8); /* slate-300/80 */
-  --color-text-muted: #64748b;     /* slate-500 */
-  --color-border: rgba(34, 211, 238, 0.2);
-
-  /* --- Glow / Shadow --- */
-  --glow-accent: 0 0 20px rgba(6, 182, 212, 0.5);
-  --glow-accent-strong: 0 0 35px rgba(6, 182, 212, 0.6);
-
-  /* --- Spacing (section level) --- */
-  --section-padding-x: 1rem;
-  --section-max-width: 56rem; /* max-w-4xl */
-
-  /* --- Typography --- */
-  --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-
-  /* --- Star / Particle Defaults --- */
-  --particle-color: #67e8f9;       /* cyan-300 */
-  --particle-glow: 0 0 8px 2px rgba(6, 182, 212, 0.4);
-  --particle-count: 40;
-}
