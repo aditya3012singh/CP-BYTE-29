@@ -12,17 +12,17 @@ import { gsap } from 'gsap';
  *   particleCount  — number of stars (default 40)
  *   className      — extra classes for the container
  */
-const StarField = ({ particleCount = 120, moveRange = 200, durationRange = [6, 14], className = '' }) => {
+const StarField = ({ particleCount = 40, className = '' }) => {
   const containerRef = useRef(null);
 
   // Memoize particles so they don't regenerate on every render
   const particles = useMemo(() =>
     Array.from({ length: particleCount }).map((_, i) => ({
       id: i,
-      size: Math.random() * 4 + 0.5,
+      size: Math.random() * 3 + 1,
       top: `${Math.random() * 100}%`,
       left: `${Math.random() * 100}%`,
-      opacity: Math.random() * 0.5 + 0.1,
+      opacity: Math.random() * 0.4 + 0.1,
     })),
     [particleCount]
   );
@@ -34,11 +34,11 @@ const StarField = ({ particleCount = 120, moveRange = 200, durationRange = [6, 1
       const els = containerRef.current.querySelectorAll('.particle');
       els.forEach((p) => {
         gsap.to(p, {
-          y: `random(-${moveRange}, ${moveRange})`,
-          x: `random(-${moveRange}, ${moveRange})`,
-          opacity: `random(0.1, 0.9)`,
-          duration: gsap.utils.random(durationRange[0], durationRange[1]),
-          delay: gsap.utils.random(0, 6),
+          y: `random(-120, 120)`,
+          x: `random(-120, 120)`,
+          opacity: `random(0.2, 0.8)`,
+          duration: gsap.utils.random(10, 18),
+          delay: gsap.utils.random(0, 5),
           repeat: -1,
           yoyo: true,
           ease: 'sine.inOut',
@@ -61,9 +61,8 @@ const StarField = ({ particleCount = 120, moveRange = 200, durationRange = [6, 1
       {particles.map((p) => (
         <div
           key={p.id}
-          className="particle absolute rounded-full bg-cyan-200 shadow-[0_0_4px_1px_rgba(0,229,255,0.3)]"
+          className="particle absolute rounded-full bg-cyan-300 shadow-[0_0_8px_2px_rgba(6,182,212,0.4)]"
           style={{
-            willChange: 'transform, opacity',
             width: `${p.size}px`,
             height: `${p.size}px`,
             top: p.top,
