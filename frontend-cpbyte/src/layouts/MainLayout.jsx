@@ -2,7 +2,7 @@ import Navbar from '../components/layout/Navbar'
 
 function MainLayout({ children }) {
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
+    <div style={{ minHeight: '100vh', background: '#060a10', color: '#f1f5f9', fontFamily: "'Inter', sans-serif" }}>
       <Navbar />
       <main>{children}</main>
     </div>
