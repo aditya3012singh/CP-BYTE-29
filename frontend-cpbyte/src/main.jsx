@@ -7,7 +7,6 @@ import HomePage from './pages/HomePage';
 import TeamPage from './pages/teampage.jsx';
 
 // Placeholder components for routing completeness
-const ProjectsPage = () => <div className="min-h-screen flex items-center justify-center text-center"><h1 className="text-4xl font-bold text-white tracking-tight">Projects Matrix</h1></div>;
 const EventsPage = () => <div className="min-h-screen flex items-center justify-center text-center"><h1 className="text-4xl font-bold text-white tracking-tight">Live Events</h1></div>;
 const ResourcesPage = () => <div className="min-h-screen flex items-center justify-center text-center"><h1 className="text-4xl font-bold text-white tracking-tight">System Resources</h1></div>;
 //const TeamPage = () => <div className="min-h-screen flex items-center justify-center text-center"><h1 className="text-4xl font-bold text-white tracking-tight">Core Team</h1></div>;
