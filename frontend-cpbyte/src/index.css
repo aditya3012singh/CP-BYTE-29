@@ -45,17 +45,20 @@ input::placeholder {
   color: #475569;
 }
 
-/* ===== CPBYTE Design Tokens ===== */
+/* ===== Root Variables ===== */
 :root {
   --color-bg-primary: #070B14;
   --color-bg-secondary: #060a12;
   --color-bg-card: #0d1420;
+
   --color-accent: #22d3ee;
   --color-accent-dim: rgba(6, 182, 212, 0.3);
   --color-accent-glow: rgba(6, 182, 212, 0.5);
+
   --color-text-primary: #ffffff;
   --color-text-secondary: rgba(203, 213, 225, 0.8);
   --color-text-muted: #64748b;
+
   --color-border: rgba(34, 211, 238, 0.2);
 
   --glow-accent: 0 0 20px rgba(6, 182, 212, 0.5);
@@ -64,17 +67,13 @@ input::placeholder {
   --section-padding-x: 1rem;
   --section-max-width: 56rem;
 
-  --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-
   --particle-color: #67e8f9;
   --particle-glow: 0 0 8px 2px rgba(6, 182, 212, 0.4);
   --particle-count: 40;
 }
 
-/* ===== CYBERPUNK ANIMATIONS ===== */
+/* ===== Animations ===== */
 @keyframes glitch-1 {
-
   0%,
   100% {
     clip-path: inset(0 0 100% 0);
@@ -93,7 +92,6 @@ input::placeholder {
 }
 
 @keyframes glitch-2 {
-
   0%,
   100% {
     clip-path: inset(0 0 100% 0);
@@ -121,7 +119,7 @@ input::placeholder {
   }
 }
 
-/* ===== Example utility classes ===== */
+/* ===== Utility Classes ===== */
 .hero-word {
   display: block;
   line-height: 1.05;
