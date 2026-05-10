@@ -2,6 +2,16 @@ import nullVectorImg from '../assets/event_null_vector.png'
 import kineticEngineImg from '../assets/event_kinetic_engine.png'
 import sigmaBreachImg from '../assets/event_sigma_breach.png'
 import offgridImg from '../assets/event_offgrid.png'
+import dataverseImg from '../assets/dataverse.jpg'
+import strangerStacksImg from '../assets/stranger_stacks.jpg'
+import codeCraftImg from '../assets/code_craft.jpg'
+import devupImg from '../assets/devup.jpg'
+import dev101Img from '../assets/dev_101.jpg'
+import dev102Img from '../assets/dev102.jpg'
+import react101Img from '../assets/react101.jpg'
+import b3Img from '../assets/b3.jpg'
+import dev103Img from '../assets/dev103.png'
+import openSourceImg from '../assets/open_source.png'
 
 export const FILTERS = ['ALL OPS', 'BOOTCAMP', 'WORKSHOP', 'SESSION', 'HACKATHON']
 
@@ -12,7 +22,7 @@ export const EVENTS = [
     title: 'DEV 103',
     tags: ['BOOTCAMP'],
     tagColors: ['blue'],
-    image: kineticEngineImg,
+    image: dev103Img,
     description: 'Full-Stack Development Bootcamp. An advanced bootcamp covering modern web technologies, cloud deployment, and best practices for production-grade applications.',
     entryFee: 'Free',
     date: 'TBD',
@@ -29,7 +39,7 @@ export const EVENTS = [
     title: 'OPEN SOURCE SPRINT',
     tags: ['WORKSHOP'],
     tagColors: ['purple'],
-    image: sigmaBreachImg,
+    image: openSourceImg,
     description: 'Collaborate on real open-source projects. Learn how to contribute to the open-source ecosystem, create pull requests, and build your GitHub profile.',
     entryFee: 'Free',
     date: 'TBD',
@@ -38,6 +48,38 @@ export const EVENTS = [
     duration: '2 days',
     difficulty: 'All Levels',
     daysLeft: 60,
+  },
+  {
+    id: 9,
+    eventStatus: 'upcoming',
+    title: 'DATAVERSE',
+    tags: ['HACKATHON'],
+    tagColors: ['purple'],
+    image: dataverseImg,
+    description: 'Code. Create. Conquer the Dataverse. A massive hackathon powered by Unstop.',
+    entryFee: 'Free',
+    date: 'Nov 6-7, 2025',
+    venue: 'KIET Ghaziabad',
+    slotsLeft: 'TBD',
+    duration: '2 days',
+    difficulty: 'All Levels',
+    daysLeft: 180,
+  },
+  {
+    id: 10,
+    eventStatus: 'upcoming',
+    title: 'STRANGER STACKS',
+    tags: ['HACKATHON'],
+    tagColors: ['red'],
+    image: strangerStacksImg,
+    description: 'Enter the Upside Down of coding. A thrilling new hackathon coming soon.',
+    entryFee: 'Free',
+    date: 'TBD',
+    venue: 'TBD',
+    slotsLeft: 'TBD',
+    duration: 'TBD',
+    difficulty: 'All Levels',
+    daysLeft: 90,
   },
   {
     id: 3,
@@ -61,7 +103,7 @@ export const EVENTS = [
     title: 'DEV 102',
     tags: ['BOOTCAMP'],
     tagColors: ['blue'],
-    image: kineticEngineImg,
+    image: dev102Img,
     description: 'Backend Bootcamp covering Springboot, NODEjs, Docker, Git & Github. A comprehensive bootcamp on backend development essentials for beginners.',
     entryFee: 'Free',
     date: '07 Apr, 2025',
@@ -72,12 +114,12 @@ export const EVENTS = [
     result: '400 Participants',
   },
   {
-    id: 4,
+    id: 11,
     eventStatus: 'completed',
     title: 'SPEAKER SESSION',
     tags: ['SESSION'],
     tagColors: ['gold'],
-    image: nullVectorImg,
+    image: devupImg,
     description: 'Technical Speaker Session with Prince Kumar & M.Rehman (SWE-2 Google). A collaborative session by CPBYTE x DEVUP featuring industry experts.',
     entryFee: 'Free',
     date: '21 Feb, 2025',
@@ -93,7 +135,7 @@ export const EVENTS = [
     title: 'DEV 101',
     tags: ['BOOTCAMP'],
     tagColors: ['blue'],
-    image: kineticEngineImg,
+    image: dev101Img,
     description: 'Web & Android Dev Bootcamp. A bootcamp on Web, Android Development and Git & GitHub Essentials for beginners.',
     entryFee: 'Free',
     date: '04 Oct, 2024',
@@ -109,7 +151,7 @@ export const EVENTS = [
     title: 'REACT 101',
     tags: ['BOOTCAMP'],
     tagColors: ['blue'],
-    image: sigmaBreachImg,
+    image: react101Img,
     description: 'React Bootcamp. A bootcamp on React for beginners covering components, hooks, state management, and building real-world applications.',
     entryFee: 'Free',
     date: '26 Apr, 2024',
@@ -125,7 +167,7 @@ export const EVENTS = [
     title: 'CODE CRAFT',
     tags: ['WORKSHOP'],
     tagColors: ['purple'],
-    image: nullVectorImg,
+    image: codeCraftImg,
     description: 'UI/UX Design Workshop. A workshop on UI/UX design for beginners covering design principles, Figma, prototyping, and user research.',
     entryFee: 'Free',
     date: '15 May, 2024',
@@ -141,7 +183,7 @@ export const EVENTS = [
     title: 'B3',
     tags: ['BOOTCAMP'],
     tagColors: ['blue'],
-    image: kineticEngineImg,
+    image: b3Img,
     description: 'Web Development Bootcamp. A beginner-friendly bootcamp introducing students to Web Dev, Git & GitHub essentials and LinkedIn optimisation.',
     entryFee: 'Free',
     date: '11 Feb, 2023',
@@ -155,6 +197,6 @@ export const EVENTS = [
 
 export const ARCHIVES = [
   { id: 1, title: 'OFF-GRID 2.0', image: offgridImg, meta: '36H HACKATHON · KIET · 10–11 APR 2026', gradient: 'linear-gradient(135deg, #1a0000 0%, #3d0000 40%, #1a0a00 100%)' },
-  { id: 2, title: 'DEV 102', meta: 'BACKEND BOOTCAMP · APR 2025', gradient: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a3e 50%, #0a0a1a 100%)' },
-  { id: 3, title: 'DEV 101', meta: 'WEB & ANDROID · 4 OCT, 2024', gradient: 'linear-gradient(135deg, #001a1a 0%, #004444 50%, #001a33 100%)' },
+  { id: 2, title: 'DEV 102', image: dev102Img, meta: 'BACKEND BOOTCAMP · APR 2025', gradient: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a3e 50%, #0a0a1a 100%)' },
+  { id: 3, title: 'DEV 101', image: dev101Img, meta: 'WEB & ANDROID · 4 OCT, 2024', gradient: 'linear-gradient(135deg, #001a1a 0%, #004444 50%, #001a33 100%)' },
 ]
